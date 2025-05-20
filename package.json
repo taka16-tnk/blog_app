@@ -1,0 +1,15 @@
+{
+  "name": "blog_app",
+  "version": "1.0.0",
+  "description": "This is a simple blog web application built using Node.js, Express.js, and EJS. Users can create, view, edit, and delete blog posts. Data is stored temporarily in memory (not persisted).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
