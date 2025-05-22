@@ -15,6 +15,20 @@
   <textarea name="content" placeholder="Content" required></textarea>
   <button type="submit">Post</button>
 
+  <h2>All Posts</h2>
+  <% if (posts.length === 0) { %>
+    <p>No posts yet. Be the first to write one!</p>
+  <% } else { %>
+    <ul>
+      <% posts.forEach(post => { %>
+        <li>
+          <h3><%= post.title %></h3>
+          <p><%= post.content %></p>
+        </li>
+      <% }) %>
+    </ul>
+  <% } %>
+
 </form>
 </body>
 </html>
